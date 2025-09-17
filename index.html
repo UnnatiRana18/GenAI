@@ -3,15 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Mitra</title>
+    <title>Mitra - Your Companion for Wellbeing</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Mitra (Your Friend)</h1>
-        <p>A safe and confidential space to check in with yourself. Your conversations are private and not stored.</p>
-        <a href="chat.html" class="button">Chat with Mitra</a>
-        <p class="disclaimer">Mitra is an AI companion, not a medical professional. If you are in a crisis, please seek immediate help from a healthcare provider.</p>
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="content-overlay">
+        <header>
+            <h1>Mitra</h1>
+            <p>Your friendly AI companion for mental wellbeing.</p>
+        </header>
+
+        <main class="container">
+            <section class="intro">
+                <h2>A Safe Space to Share and Reflect</h2>
+                <p>Life can be overwhelming. Mitra is here to listen without judgment, offering a private and confidential space to explore your thoughts and feelings.</p>
+                <a href="chat.html" class="button primary-button">Chat with Mitra Now</a>
+            </section>
+
+            <section id="about">
+                <h3>About Mitra</h3>
+                <p>Mitra (meaning 'friend' in Hindi) is an AI designed to be a supportive listener. It's not a therapist, but a companion to help you navigate daily stresses by providing a safe outlet and suggesting simple, positive activities.</p>
+            </section>
+
+            <section id="how-it-works">
+                <h3>How It Works</h3>
+                <div class="steps">
+                    <div class="step"><strong>1. Start a Chat:</strong> Click the button to open a new, private chat session.</div>
+                    <div class="step"><strong>2. Talk Freely:</strong> Share what's on your mind. Your conversation is anonymous and secure.</div>
+                    <div class="step"><strong>3. Find Support:</strong> Receive empathetic responses and gentle guidance.</div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p class="disclaimer">Mitra is an AI companion and not a substitute for professional medical advice. If you are in a crisis, please contact a local emergency service or a mental health professional.</p>
+        </footer>
     </div>
 </body>
 </html>

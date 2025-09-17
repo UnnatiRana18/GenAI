@@ -7,14 +7,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="chat-container">
-        <div class="chat-header"><h2>Chat with Mitra</h2></div>
-        <div class="chat-box" id="chat-box">
-            <div class="message bot-message"><p>Hello! I'm Mitra. How are you feeling today?</p></div>
-        </div>
-        <div class="chat-input">
-            <input type="text" id="user-input" placeholder="Type your message...">
-            <button id="send-btn">Send</button>
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="content-overlay">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>Chat with Mitra</h2>
+                <a href="index.html" class="home-link">Home</a>
+            </div>
+            <div class="chat-box" id="chat-box">
+                <div class="message bot-message"><p>Hello! I'm Mitra. How are you feeling today?</p></div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button id="send-btn">Send</button>
+            </div>
         </div>
     </div>
     <script src="chat.js"></script>

@@ -16,8 +16,8 @@ app.use((req, res, next) => {
 });
 
 const vertex_ai = new VertexAI({ 
-  project: 'wellness-bot-project-472312', 
-  location: 'asia-south1' 
+  project:'wellness-bot-project-472312', 
+  location:'asia-south1' 
 });
 
 const generativeModel = vertex_ai.getGenerativeModel({
