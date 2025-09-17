@@ -3,7 +3,7 @@ const userInput = document.getElementById('user-input');
 const sendBtn = document.getElementById('send-btn');
 
 // We will get this URL in Part 2, Step 3.
-const BACKEND_URL = 'PASTE_YOUR_NEW_CLOUD_RUN_URL_HERE'; 
+const BACKEND_URL = 'https://wellness-bot-api-111991361236.asia-south1.run.app'; 
 
 function addMessage(message, sender) {
     const messageElement = document.createElement('div');
