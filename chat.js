@@ -4,7 +4,7 @@ const userInput = document.getElementById('user-input');
 const sendBtn = document.getElementById('send-btn');
 
 // This is the correct and final URL for your deployed backend AI.
-const BACKEND_URL = 'https://wellness-bot-api-111991361236.asia-south1.run.app'; 
+const BACKEND_URL = 'https://wellness-bot-gemini-api-864225446074.asia-south1.run.app'; 
 
 // Function to add a message to the chat box
 function addMessage(message, sender) {
