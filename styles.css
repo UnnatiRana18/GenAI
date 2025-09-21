@@ -154,6 +154,9 @@ h3 {
     padding: 1rem;
     text-align: center;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .home-link {
@@ -232,4 +235,94 @@ h3 {
 
 #send-btn:hover {
     background-color: #0056b3;
+}
+
+/* ========== NEW GAMES SECTION STYLES ========== */
+
+/* Games Container */
+.games-container {
+    display: flex;
+    justify-content: center; /* Aligns cards to the center */
+    gap: 2rem; /* Space between cards */
+    margin-top: 2rem;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+}
+
+/* Link Wrapper for the card */
+.game-card-link {
+    text-decoration: none; /* Removes underline from the link */
+}
+
+/* The main card element - defines the 3D space */
+.game-card {
+    background-color: transparent;
+    width: 220px;
+    height: 280px;
+    perspective: 1000px; /* For the 3D flip effect */
+    border-radius: 15px;
+}
+
+/* The inner element that actually flips */
+.game-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border-radius: 15px;
+}
+
+/* This triggers the flip on hover */
+.game-card:hover .game-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front and Back of the card - positioned on top of each other */
+.game-card-front, .game-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* For Safari */
+    backface-visibility: hidden;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the front of the card */
+.game-card-front {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.game-card-front img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.game-card-front .game-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+/* Styling for the back of the card */
+.game-card-back {
+    background-color: #007bff; /* A nice blue color */
+    color: white;
+    transform: rotateY(180deg);
+    padding: 1.5rem;
+    box-sizing: border-box; /* Ensures padding is included in the height/width */
+}
+
+.game-card-back h4 {
+    margin-top: 0;
+    font-size: 1.3rem;
 }
