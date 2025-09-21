@@ -17,6 +17,7 @@ app.use((req, res, next) => {
   next();
 });
 
+
 // --- GET YOUR API KEY ---
 // This line fetches the API key from the environment variables we will set in Cloud Run.
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
